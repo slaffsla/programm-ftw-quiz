@@ -17,15 +17,15 @@ const Stars = ({ navigation, lang }) => {
         <Text style={styles.paragraphBlack}>?HOW DO YOU FEEL TODAY</Text>
         <View style={styles.smallStars}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Quiz', params = { lang: lang, difficulty: 'NOOB' })}>
+            onPress={() => navigation.navigate('Quiz', { lang: lang, difficulty: 'NOOB' })}>
             <Image style={styles.smallStar} source={require("../assets/icons/s1.png")} />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Quiz', params = { lang: lang, difficulty: 'MIDDLE' })}>
+            onPress={() => navigation.navigate('Quiz', { lang: lang, difficulty: 'MIDDLE' })}>
             <Image style={styles.smallStar} source={require("../assets/icons/s2.png")} />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate('Quiz', params = { lang: lang, difficulty: 'SINIOR' })}>
+            onPress={() => navigation.navigate('Quiz', { lang: lang, difficulty: 'SINIOR' })}>
             <Image style={styles.smallStar} source={require("../assets/icons/s3.png")} />
           </TouchableOpacity>
         </View>

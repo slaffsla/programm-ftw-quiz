@@ -34,6 +34,7 @@ const initGame = () => {
   responseList = [];
   totalScore = 0;
 };
+
 export default function Quiz({ navigation, route }) {
   const [perguntaTitle, setPerguntaTitle] = useState(null);
    const [perguntaImage, setPerguntaImage] = useState(null);
@@ -43,6 +44,13 @@ export default function Quiz({ navigation, route }) {
   const [calculatedScore, setCalculatedScore] = useState('finall results');
   const [gameStatus, setGameStatus] = useState('NEW GAME');
   const [gameOver, setGameOver] = useState(false);
+  const [bossName, setBossName] = useState('space');
+
+  const randomizeBoss = () => {
+    const avalibleBosses = ['china','india','motivators','rus','space','work'];
+    setBossName(avalibleBosses[Math.floor(Math.random()*avalibleBosses.length)]);
+  }
+
   const submitAnswer = () => {
     if (perguntaIndex >= 9) {
       setGameStatus('GAME OVER');
@@ -97,6 +105,7 @@ export default function Quiz({ navigation, route }) {
     setGameStatus('NEW GAME');
     setGameOver(false);
     setPerguntaIndex(1);
+    randomizeBoss();
   }, []);
 
   const listItems = questions?.map((question, index) => (
@@ -104,6 +113,7 @@ export default function Quiz({ navigation, route }) {
       width: 150,
       justifyContent: 'space-between',
       padding: 5,
+      key:{index}
     }}>
       <Button
         title={question}
@@ -143,7 +153,7 @@ export default function Quiz({ navigation, route }) {
              
                 <Image
                 style={styles.questionImage}
-                source={require(`../../assets/images/bosses/china/${perguntaIndex}.jpg`)}
+                source={require(`../../assets/images/bosses/${bossName}/${perguntaIndex}.jpg`)}
               />
               
               
