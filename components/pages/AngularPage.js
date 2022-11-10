@@ -16,7 +16,7 @@ export default function AngularPage({ navigation }) {
               <Image style={styles.image} source={require("../../assets/icons/angularLogo.png")} />
                  <Stars  {...{ navigation,lang:'ANGULAR' }}  />
                 <TouchableOpacity
-         onPress={() =>  navigation.navigate('Quiz', params= { lang: 'ANGULAR',difficulty:'MIDDLE' })}>
+         onPress={() =>  navigation.navigate('Quiz',{ lang: 'ANGULAR'})}>
           <Image style={styles.startBtn} source={require("../../assets/icons/startBtn.png")} />
         </TouchableOpacity>
       </View>

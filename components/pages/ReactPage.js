@@ -18,7 +18,7 @@ export default function ReactPage({ navigation }) {
         <Image style={styles.image} source={require("../../assets/icons/reactLogo.png")} />
         <Stars  {...{ navigation, lang: 'REACT' }} />
         <TouchableOpacity
-          onPress={() => navigation.navigate('Quiz', params = { lang: 'REACT', difficulty: 'MIDDLE' })}>
+          onPress={() => navigation.navigate('Quiz', { lang: 'REACT', difficulty: 'MIDDLE' })}>
           <Image style={styles.startBtn} source={require("../../assets/icons/startBtn.png")} />
         </TouchableOpacity>
       </View>

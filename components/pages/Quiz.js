@@ -29,6 +29,7 @@ const DATA = [
 ];
 let correctList = [];
 let responseList = [];
+let totalScore  = 0;
 const initGame = () => {
   responseList = [];
   totalScore = 0;
@@ -139,13 +140,12 @@ export default function Quiz({ navigation, route }) {
               <Text style={styles.paragraph}> {perguntaTitle} </Text>
             </View>
             <View style={{ marginTop: -30 }}>
-              {route.params.lang === 'REACT' &&
-                route.params.difficulty === 'MIDDLE' &&
+             
                 <Image
                 style={styles.questionImage}
                 source={require(`../../assets/images/bosses/china/${perguntaIndex}.jpg`)}
               />
-              }
+              
               
             </View>
             <View

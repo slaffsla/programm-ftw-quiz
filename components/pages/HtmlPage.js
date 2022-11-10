@@ -16,7 +16,7 @@ export default function HtmlPage({ navigation }) {
         <Image style={styles.image} source={require("../../assets/icons/jsLogo3.png")} />
         <Stars  {...{ navigation, lang: 'HTML5' }} />
         <TouchableOpacity
-          onPress={() => navigation.navigate('Quiz', params = { lang: 'HTML5', difficulty: 'MIDDLE' })}>
+          onPress={() => navigation.navigate('Quiz',{ lang: 'HTML5', difficulty: 'MIDDLE' })}>
           <Image style={styles.startBtn} source={require("../../assets/icons/startBtn.png")} />
         </TouchableOpacity>
       </View>
