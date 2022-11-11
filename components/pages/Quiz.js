@@ -38,7 +38,7 @@ const initGame = () => {
 export default function Quiz({ navigation, route }) {
   const [perguntaTitle, setPerguntaTitle] = useState(null);
    const [perguntaImage, setPerguntaImage] = useState(null);
-  const [perguntaIndex, setPerguntaIndex] = useState(0);
+  const [perguntaIndex, setPerguntaIndex] = useState(1);
   const [selectedId, setSelectedId] = useState(null);
   const [questions, setQuestions] = useState(null);
   const [calculatedScore, setCalculatedScore] = useState('finall results');
@@ -153,7 +153,7 @@ export default function Quiz({ navigation, route }) {
              
                 <Image
                 style={styles.questionImage}
-                source={require(`../../assets/images/bosses/${bossName}/${perguntaIndex}.jpg`)}
+                source={require(`../../assets/images/bosses/china/1.jpg`)}
               />
               
               

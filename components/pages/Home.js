@@ -9,7 +9,7 @@ export default function Home({ navigation }) {
       <View style={styles.container}>
         <Text style={styles.paragraph}>
           WELCOME !!!
-{"\n"}                                                                                                                                   PROGRAMM FTW
+{"\n"}PROGRAMM FTW
           {"\n"}
           CANDIDATE!</Text>
 
