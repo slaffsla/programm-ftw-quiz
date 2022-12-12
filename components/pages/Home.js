@@ -1,4 +1,8 @@
 import * as React from "react";
+import TopMenuBar from "../TopMenuBar";
+import i18n from "../../assets/i18n/i18n";
+import { useTranslation } from "react-i18next";
+console.table(i18n);
 import {
   Text,
   View,
@@ -10,16 +14,12 @@ import {
   ImageBackground,
   Pressable,
 } from "react-native";
-import TopMenuBar from "../TopMenuBar";
 import LoginConnect from "../loginconnect";
-import { useTranslation } from "react-i18next";
 
-export default function Home({ navigation, lang }) {
+export default function Home({ navigation }) {
   const { t, i18n } = useTranslation();
-
   const [currentLanguage, setLanguage] = React.useState("en");
-  console.log(i18n);
-  console.log(currentLanguage);
+
   const changeLanguage = (value) => {
     i18n
       .changeLanguage(value)
