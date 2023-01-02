@@ -44,7 +44,7 @@ export default function Home({ navigation }) {
           />
         </TouchableOpacity>
 
-        <Pressable
+        {/*  <Pressable
           onPress={() => changeLanguage("en")}
           style={{
             padding: 20,
@@ -59,7 +59,7 @@ export default function Home({ navigation }) {
           }}
         >
           <Text>Select Russian</Text>
-        </Pressable>
+        </Pressable> */}
       </View>
     </View>
   );
