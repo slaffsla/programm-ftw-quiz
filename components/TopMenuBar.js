@@ -21,6 +21,13 @@ const lngs = {
 export default function TopMenuBar({ navigation }) {
   const { t, i18n } = useTranslation();
   const [currentLanguage, setLanguage] = React.useState("en");
+  const changeLanguage = (value) => {
+    i18n
+      .changeLanguage(value)
+      .then(() => setLanguage(value))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.news}>
@@ -31,12 +38,16 @@ export default function TopMenuBar({ navigation }) {
               type="submit"
               key={lng}
               style={{ fontSize: 10, color: "AAA" }}
-              title="Press Me"
-              onClick={() => i18n.changeLanguage(lng)}
+              title={lng}
+              onPress={() =>
+                i18n.resolvedLanguage === "ru"
+                  ? changeLanguage("en")
+                  : changeLanguage("ru")
+              }
               disabled={i18n.resolvedLanguage === lng}
             >
               {lngs[lng].nativeName}
-              Press Me
+              Change Lng
             </Button>
           ))}
         </View>
@@ -80,6 +91,7 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: "row",
     flexWrap: "wrap",
+    marginLeft: 10,
   },
   mojoAvatar: {
     position: "absolute",
@@ -97,12 +109,18 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     fontWeight: "bold",
   },
+
   lng: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignContent: "right",
+    marginLeft: 10,
     fontSize: 18,
     color: "#ffffff",
     textAlign: "right",
     paddingRight: 5,
     fontWeight: "bold",
+    backgroundColor: "#010308",
   },
   separator: {
     marginVertical: 8,
