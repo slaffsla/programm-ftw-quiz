@@ -11,7 +11,7 @@ const Stars = ({ navigation, lang }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <Text style={styles.paragraphBlack}>?HOW DO YOU FEEL TODAY</Text>
+        <Text style={styles.paragraphBlack}>HOW DO YOU FEEL TODAY?</Text>
         <View style={styles.smallStars}>
           <TouchableOpacity //#TODO: refactoring repeated code
             onPress={() =>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   paragraphBlack: {
     margin: 24,
-    marginTop: 0,
+    marginTop: 10,
     fontSize: 14,
     color: "#262626",
     fontWeight: "bold",

@@ -5,42 +5,52 @@ import {
   Text,
   Image,
   TouchableOpacity,
-  InteractionManager
-} from 'react-native';
+  InteractionManager,
+} from "react-native";
 
-
-import React, { useState, useEffect, useCallback, navigation } from 'react';
+import React, { useState, useEffect, useCallback, navigation } from "react";
 const FixedQuizTop = ({ lang }) => {
- 
-    function startTimer() {
+  function startTimer() {
     timer = setInterval(() => {
       if (Math.floor(seconds) > 5) {
-        setMinutes((old) => old += 1);
+        setMinutes((old) => (old += 1));
         setSeconds(0);
       } else {
-        setSeconds((old) => old += 1);
+        setSeconds((old) => (old += 1));
       }
     }, 1000);
   }
-  useEffect(() => {
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <SafeAreaView>
       <View style={styles.topBarItems}>
-        {lang === 'REACT' && <Image style={styles.reactImage} source={require("../assets/icons/reactLogo.png")} />}
-        {lang === 'ANGULAR' && <Image style={styles.reactImage} source={require("../assets/icons/angularLogo.png")} />}
-        {lang === 'HTML5' && <Image style={styles.reactImage} source={require("../assets/icons/jsLogo3.png")} />}
-     
+        {lang === "REACT" && (
+          <Image
+            style={styles.reactImage}
+            source={require("../assets/icons/reactLogo.png")}
+          />
+        )}
+        {lang === "ANGULAR" && (
+          <Image
+            style={styles.reactImage}
+            source={require("../assets/icons/angularLogo.png")}
+          />
+        )}
+        {lang === "HTML5" && (
+          <Image
+            style={styles.reactImage}
+            source={require("../assets/icons/jsLogo3.png")}
+          />
+        )}
       </View>
-     
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   topBarItems: {
-    flexDirection: 'row',
+    flexDirection: "row",
     backgroundColor: "#e0eaff",
     resizeMode: "stretch",
   },
@@ -54,8 +64,9 @@ const styles = StyleSheet.create({
     height: 60,
   },
   reactImage: {
+    marginTop: 10,
     width: 60,
-    height: 60
+    height: 60,
   },
 });
 

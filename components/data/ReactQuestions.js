@@ -4,6 +4,7 @@ const ReactQuestions = [
     question: "WHO CREATED REACT? ",
     answers: ["GOOGLE", "FACEBOOK", "ME", "GOD"],
     correctIndex: 1,
+    image: "../../assets/images/bosses/china/1.jpg",
   },
   {
     id: "58694a0f-3da1-471f-bd96-145571e29d721",
@@ -15,6 +16,7 @@ const ReactQuestions = [
       "ALL OF THOSE",
     ],
     correctIndex: 3,
+    image: "../../assets/images/bosses/china/1.jpg",
   },
   {
     id: "58694a0f-3da1-4719d722",
