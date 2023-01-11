@@ -20,7 +20,7 @@ import HomePage from "./components/pages/HomePage";
 const Stack = createNativeStackNavigator();
 
 function App() {
-  const { t, i18n } = useTranslation();
+  /* const { t, i18n } = useTranslation();
 
   //const [currentLanguage, setLanguage] = React.useState("en");
   //console.log(currentLanguage);
@@ -29,7 +29,7 @@ function App() {
       .changeLanguage(value)
       .then(() => setLanguage(value))
       .catch((err) => console.log(err));
-  };
+  }; */
   return (
     <View style={styles.container}>
       <NavigationContainer style={{ position: "absolute", zIndex: 1 }}>
