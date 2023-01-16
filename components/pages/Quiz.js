@@ -122,11 +122,12 @@ export default function Quiz({ navigation, route }) {
 
   const listItems = questions?.map((question, index) => (
     <View
+      key={index}
       style={{
         width: 150,
         justifyContent: "space-between",
         padding: 15,
-        key: { index },
+        // Is it in place?!!!
       }}
     >
       <Button
