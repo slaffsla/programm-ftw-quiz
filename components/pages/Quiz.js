@@ -31,10 +31,8 @@ let correctList = [];
 let responseList = [];
 let totalScore = 0;
 const initGame = () => {
-  responseList = [];
   totalScore = 0;
 };
-
 export default function Quiz({ navigation, route }) {
   const [perguntaTitle, setPerguntaTitle] = useState(null);
   const [perguntaImage, setPerguntaImage] = useState(null);
@@ -42,7 +40,7 @@ export default function Quiz({ navigation, route }) {
   const [selectedId, setSelectedId] = useState(null);
   const [questions, setQuestions] = useState(null);
   const [calculatedScore, setCalculatedScore] = useState("finall results");
-  const [gameStatus, setGameStatus] = useState("NEW GAME");
+  const [gameStatus, setGameStatus] = useState('NEW GAME');
   const [gameOver, setGameOver] = useState(false);
   const [bossName, setBossName] = useState("space");
 
@@ -72,16 +70,33 @@ export default function Quiz({ navigation, route }) {
     setSelectedId(null);
   };
 
-  const calculateFinallResult = () => {
-    responseList.push(selectedId);
-    let difference = 0;
-    for (let i = 0; i < responseList.length; i++) {
-      if (responseList[i] === correctList[i]) {
-        difference += 1;
-      }
-    }
-    setCalculatedScore(`SCORE = ${difference}`);
+  const submitAnswer = (index) => {
+  console.log('submit answer', index)
+   console.log('correct list answer', correctList)
+  if(gameStatus === 'SUBMITTING'){
+        return;
+  }
+    setGameStatus('SUBMITTING');
+    setSelectedId(index);
+
+    setTimeout(() => {
+     setSelectedId(index);
+       if(correctList[perguntaIndex] === index){
+        totalScore += 1;
+       }
+        if (perguntaIndex >= 9) {
+          setGameStatus('GAME OVER');
+          setGameOver(true);
+          return;
+        }
+      setPerguntaIndex((old) => (old += 1));
+      generateQuestion();
+      setSelectedId(null);
+      setGameStatus('SUBMITTING-DONE');
+    }, 800);
+
   };
+
   const generateQuestion = useCallback(() => {
     //TODO: repeated code refactor
     if (route.params.lang === "REACT") {
@@ -116,10 +131,16 @@ export default function Quiz({ navigation, route }) {
     initGame();
     setGameStatus("NEW GAME");
     setGameOver(false);
-    setPerguntaIndex(1);
+    setPerguntaIndex(0);
     randomizeBoss();
   }, []);
 
+  const getBtnColor = (index) => {
+   if(correctList[perguntaIndex] === index){
+    return '#009900';
+   }
+    return '#b30000';
+  }
   const listItems = questions?.map((question, index) => (
     <View
       key={index}
@@ -131,10 +152,13 @@ export default function Quiz({ navigation, route }) {
       }}
     >
       <Button
+        key={index}
         title={question}
         color={index == selectedId ? "#009900" : "#9999ff"}
         backgroundColor={index == selectedId ? "#009900" : "#9999ff"}
         onPress={() => setSelectedId(index)}
+        color={index == selectedId ? getBtnColor(index) : '#9999ff'}
+        onPress={() => submitAnswer(index)}
       />
     </View>
   ));
@@ -188,6 +212,7 @@ export default function Quiz({ navigation, route }) {
             >
               {listItems}
             </View>
+            <Text style={styles.paragraph}>question number : {perguntaIndex} from 10</Text>
             <ProgressBar
               style={{
                 height: 15,
@@ -212,6 +237,10 @@ export default function Quiz({ navigation, route }) {
       )}
       {gameOver && (
         <QuizComplete {...{ navigation }} calculatedScore={calculatedScore} />
+        </View>
+      )}
+      {gameOver != false && (
+        <QuizComplete {...{ navigation }} calculatedScore={totalScore} />
       )}
     </View>
   );
