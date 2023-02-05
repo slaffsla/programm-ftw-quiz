@@ -10,9 +10,9 @@ const Html5Questions = [
     "!="
     ],
     "correctIndex": 1
-    },
-    
-    {
+  },
+  
+  {
     "id": 2,
     "question": "What is the syntax for creating an object in JavaScript?",
     "answers": [
@@ -22,9 +22,9 @@ const Html5Questions = [
     "obj = {}"
     ],
     "correctIndex": 1
-    },
-    
-    {
+  },
+  
+  {
     "id": 3,
     "question": "Which of these is not a way to create a variable in JavaScript?",
     "answers": [
@@ -34,9 +34,9 @@ const Html5Questions = [
     "define"
     ],
     "correctIndex": 3
-    },
-    
-    {
+  },
+  
+  {
     "id": 4,
     "question": "What type of loop is best suited to iterating over an array in JavaScript?",
     "answers": [
@@ -46,9 +46,9 @@ const Html5Questions = [
     "forEach loop"
     ],
     "correctIndex": 3
-    },
+  },
 
-    {
+  {
     "id": 5,
     "question": "What is the correct syntax for creating a function in JavaScript?",
     "answers": [
@@ -58,9 +58,9 @@ const Html5Questions = [
     "let = function myFunction()"
     ],
     "correctIndex": 2
-    },
-    
-    {
+  },
+  
+  {
     "id": 6,
     "question": "What is the keyword used to issue an error in JavaScript?",
     "answers": [
@@ -70,11 +70,11 @@ const Html5Questions = [
     "exception"
     ],
     "correctIndex": 1
-    },
+  },
 
-    {
-      "id": 7,
-      "question": "What's the difference between let and var in ES6?",
+  {
+    "id": 7,
+      "question": "What's the difference between let and var?",
       "answers": [
       "let is block-scoped, var is function-scoped",
       "var is block-scoped, let is function-scoped",
@@ -82,23 +82,10 @@ const Html5Questions = [
       "let and var are both block-scoped"
       ],
       "correctIndex": 0
-    },
+  },
 
-    //Del
-    {
-      "id": 7,
-      "question": "What is let keyword used for?",
-      "answers": [
-      "Define constant variables",
-      "Define block-scoped variables",
-      "Define global variables",
-      "Define function-scoped variables"
-      ],
-      "correctIndex": 1
-      },
-
-      {
-      "id": 8,
+  {
+    "id": 8,
       "question": "What is const keyword used for?",
       "answers": [
       "Define block-scoped variables",
@@ -107,22 +94,22 @@ const Html5Questions = [
       "Define function-scoped variables"
       ],
       "correctIndex": 2
-      },
+  },
 
-      {
-        "id": 9,
-        "question": "How can you destructure an object in JavaScript?",
-        "answers": [
-        "Using square brackets",
-        "Using curly braces",
-        "Using both square and curly braces",
-        "Destructuring is not possible for objects"
-        ],
-        "correctIndex": 1
-      },
+  {
+    "id": 9,
+      "question": "How can you destructure an object in JavaScript?",
+      "answers": [
+      "Using square brackets",
+      "Using curly braces",
+      "Using both square and curly braces",
+      "Destructuring is not possible for objects"
+      ],
+      "correctIndex": 1
+  },
 
-      {
-      "id": 10,
+  {
+    "id": 10,
       "question": "How to destructure an array?",
       "answers": [
       "Using destructuring assignment",
@@ -131,11 +118,11 @@ const Html5Questions = [
       "None of the above"
       ],
       "correctIndex": 0
-      },
+  },
 
-      {
-      "id": 11,
-      "question": "How to declare a class in ES6?",
+  {
+    "id": 11,
+      "question": "How to declare a class?",
       "answers": [
       "Using class keyword",
       "Using function constructor",
@@ -143,177 +130,252 @@ const Html5Questions = [
       "None of the above"
       ],
       "correctIndex": 0
-      },
-      
-      {
-        "id": 19,
-        "question": "What is the purpose of the let keyword in JavaScript?",
-        "answers": [
-        "To declare a variable with global scope",
-        "To declare a variable with block-level scope",
-        "To declare a variable that can only be reassigned",
-        "To declare a constant variable"
-        ],
-        "correctIndex": 1
-      },
+  },
 
-      {
-      "id": 20,
-      "question": "What is the purpose of the const keyword in JavaScript?",
+  {
+    "id": 12,
+    "question": "How do you declare a JavaScript arrow function?",
+    "answers": [
+    "function (params) => { code }",
+    "function params => { code }",
+    "(params) => { code }",
+    "(params) { code }"
+    ],
+    "correctIndex": 2
+  },
+
+  {
+    "id": 13,
+    "question": "What is the result of the following expression: Boolean(NaN)?",
+    "answers": [
+    "NaN",
+    "undefined",
+    "true",
+    "false"
+    ],
+    "correctIndex": 3
+  },
+
+  {
+    "id": 14,
+    "question": "What will be the output of the following code?\n\n\nlet num = 0.1 + 0.2;\nconsole.log(num);\n",
+    "answers": [
+    "0.3",
+    "0.30000000000000004",
+    "0.5",
+    "1"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    "id": 15,
+    "question": "What method is not a working way to check if x is an array in JavaScript?",
+    "answers": [
+    "Array.isArray(x)",
+    "x instanceof Array",
+    "typeof x === 'array'",
+    "Object.prototype.toString.call(x) === '[object Array]'"
+    ],
+    "correctIndex": 2
+  },
+
+  {
+    "id": 16,
+    "question": "What is the value of a after the following code runs?; let a = (1, 2, 3)",
+    "answers": [
+    "1",
+    "2",
+    "3",
+    "undefined"
+    ],
+    "correctIndex": 2
+  },
+
+  {
+    "id": 17,
+    "question": "What is the use of the 'this' keyword in JavaScript?",
+    "answers": [
+    "To refer to a function's arguments object",
+    "To refer to the object that a function is a property of",
+    "To refer to the global object",
+    "To refer to a newly created object"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    id: '18',
+    question: 'What is a closure?',
+    answers: [
+      'A function that has access to variables in its parent scope',
+      'A function that can only be invoked once',
+      'A function that can only be invoked by its parent function',
+      'None of the above'
+    ],
+    correctIndex: 0
+  },
+
+  {
+    "id": 19,
+      "question": "What is the purpose of the let keyword in JavaScript?",
       "answers": [
-      "To declare a variable with block-level scope",
       "To declare a variable with global scope",
-      "To declare a variable that can be reassigned",
+      "To declare a variable with block-level scope",
+      "To declare a variable that can only be reassigned",
       "To declare a constant variable"
       ],
-      "correctIndex": 3
-      },
+      "correctIndex": 1
+  },
 
-      {
-      "id": 21,
-      "question": "Which of the following is not a feature introduced in ES6?",
-      "answers": [
-      "Template literals",
-      "Rest parameters",
-      "Spread operator",
-      "TypeScript"
-      ],
-      "correctIndex": 3
-      },
+  {
+  "id": 20,
+  
+  "question": "What is the difference between null and undefined in JavaScript?",
+  "answers": [
+  "null is a value that represents no value, while undefined means a variable has been declared but has not been assigned a value",
+  "undefined is a value that represents no value, while null means a variable has been declared but has not been assigned a value",
+  "null and undefined are the same thing",
+  "null is an object, while undefined is a primitive value"
+  ],
+  "correctIndex": 0
+  },
 
-      {
-      "id": 22,
-      "question": "Which of the following is not a feature of arrow functions?",
-      "answers": [
-      "Lexical this",
-      "Shorter syntax",
-      "Dynamic this",
-      "Can’t be used as constructors"
-      ],
-      "correctIndex": 2
-      },
+  {
+  "id": 21,
+  "question": "Which of the following is not a feature introduced in ES6?",
+  "answers": [
+  "Template literals",
+  "Rest parameters",
+  "Spread operator",
+  "TypeScript"
+  ],
+  "correctIndex": 3
+  },
 
-      {
-      "id": 23,
-      "question": "What is the purpose of the ... operator in JavaScript?",
-      "answers": [
-      "To destructure arrays",
-      "To merge arrays",
-      "To spread arrays",
-      "To concatenate arrays"
-      ],
-      "correctIndex": 2
-      },
+  {
+  "id": 22,
+  "question": "Which of the following is not a feature of arrow functions?",
+  "answers": [
+  "Lexical this",
+  "Shorter syntax",
+  "Dynamic this",
+  "Can’t be used as constructors"
+  ],
+  "correctIndex": 2
+  },
 
-      {
-        "id": 24,
-        "question": "What is the output of this code: let x = [1,2,3]; console.log(...x);",
-        "answers": [
-        "undefined",
-        "Error",
-        "1,2,3",
-        "[1,2,3]"
-        ],
-        "correctIndex": 2
-      },
+  {
+  "id": 23,
+  "question": "What is the purpose of the ... operator in JavaScript?",
+  "answers": [
+  "To destructure arrays",
+  "To merge arrays",
+  "To spread arrays",
+  "To concatenate arrays"
+  ],
+  "correctIndex": 2
+  },
 
-      {
-      "id": 25,
-      "question": "What is the output of this code: let obj = { name: 'John', age: 30 }; let { name, age} = obj; console.log(name, age);",
-      "answers": [
-      "undefined, undefined",
-      "Error",
-      "John, 30",
-      "name, age"
-      ],
-      "correctIndex": 2
-      },
+  {
+    "id": 24,
+    "question": "What is the output of this code: let x = [1,2,3]; console.log(...x);",
+    "answers": [
+    "undefined",
+    "Error",
+    "1,2,3",
+    "[1,2,3]"
+    ],
+    "correctIndex": 2
+  },
 
-      {
-        "id": 26,
-        "question": "How to check if an object has a specific property in JavaScript?",
-        "answers": [
-        "object.hasOwnProperty()",
-        "object.propertyIsEnumerable()",
-        "Object.keys()",
-        "property in object"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 27,
-        "question": "How to make a deep copy of an object in JavaScript?",
-        "answers": [
-        "JSON.parse(JSON.stringify())",
-        "Object.assign({}, object)",
-        "Object.create(object)",
-        "Spread operator"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 28,
-        "question": "What is hoisting in JavaScript?",
-        "answers": [
-        "Moving variable and function declarations to the top of their scope",
-        "Executing functions in order they are declared",
-        "Declaring functions and variables only after they are used",
-        "Caching variable and function declarations for better performance"
-        ],
-        "correctIndex": 0
-      },
-        
-      {
-        "id": 29,
-        "question": "Which of the following is not a valid way to declare a variable in JavaScript?",
-        "answers": [
-        "var",
-        "let",
-        "const",
-        "define"
-        ],
-        "correctIndex": 3
-      },
-      {
-        "id": 30,
-        "question": "What does the spread operator do in JavaScript?",
-        "answers": [
-        "It creates a new array by spreading all elements of an existing array into a new array",
-        "It concatenates two arrays into a single array",
-        "It spreads the properties of an object into a new object",
-        "It creates a shallow copy of an array or an object"
-        ],
-        "correctIndex": 0
-        },
-        {
-        "id": 31,
-        "question": "What is the output of the following code? console.log(typeof(null))",
-        "answers": [
-        "null",
-        "object",
-        "undefined",
-        "string"
-        ],
-        "correctIndex": 1
-        },
+  {
+    "id": 25,
+    "question": "What is the output of this code: let obj = { name: 'John', age: 30 }; let { name, age} = obj; console.log(name, age);",
+    "answers": [
+    "undefined, undefined",
+    "Error",
+    "John, 30",
+    "name, age"
+    ],
+    "correctIndex": 2
+  },
 
+  {
+    "id": 26,
+    "question": "How to check if an object has a specific property in JavaScript?",
+    "answers": [
+    "object.hasOwnProperty()",
+    "object.propertyIsEnumerable()",
+    "Object.keys()",
+    "property in object"
+    ],
+    "correctIndex": 0
+  },
 
-      {
-      "id": 30,
-      "question": "What is the difference between null and undefined in JavaScript?",
-      "answers": [
-      "null is a value that represents no value, while undefined means a variable has been declared but has not been assigned a value",
-      "undefined is a value that represents no value, while null means a variable has been declared but has not been assigned a value",
-      "null and undefined are the same thing",
-      "null is an object, while undefined is a primitive value"
-      ],
-      "correctIndex": 0
-      },
-      
-      //some to check
-
-    {
+  {
     "id": 27,
+    "question": "How to make a deep copy of an object in JavaScript?",
+    "answers": [
+    "JSON.parse(JSON.stringify())",
+    "Object.assign({}, object)",
+    "Object.create(object)",
+    "Spread operator"
+    ],
+    "correctIndex": 0
+  },
+
+  {
+    "id": 28,
+    "question": "What is hoisting in JavaScript?",
+    "answers": [
+      "Variable and function declarations moved to top",
+      "Variable declarations moved to top, function declarations remain in place",
+      'A way to move elements in the DOM',
+      'A method for handling errors',
+      "None of the above"
+    ],
+    "correctIndex": 0
+  },
+    
+  {
+    "id": 29,
+    "question": "Which of the following is not a valid way to declare a variable in JavaScript?",
+    "answers": [
+    "var",
+    "let",
+    "const",
+    "define"
+    ],
+    "correctIndex": 3
+  },
+
+  {
+    "id": 30,
+    "question": "What does the spread operator do in JavaScript?",
+    "answers": [
+    "It creates a new array by spreading all elements of an existing array into a new array",
+    "It concatenates two arrays into a single array",
+    "It spreads the properties of an object into a new object",
+    "It creates a shallow copy of an array or an object"
+    ],
+    "correctIndex": 0
+  },
+
+  {
+    "id": 31,
+    "question": "What is the output of the following code? console.log(typeof(null))",
+    "answers": [
+    "null",
+    "object",
+    "undefined",
+    "string"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    "id": 32,
     "question": "What is the output of this code: function* generator() { yield 1; yield 2; yield 3; } let gen = generator(); console.log(gen.next().value);",
     "answers": [
     "1",
@@ -322,626 +384,320 @@ const Html5Questions = [
     "undefined"
     ],
     "correctIndex": 0
-    },
+  },
 
-    {
-    "id": 22,
-    "question": "What is the output of this code: class Test { constructor() { this.a = 1; } print() { console.log(this.a); } } let test = new Test(); let { print } = test; print();",
-    "answers": [
-    "1",
-    "undefined",
-    "Error",
-    "this is not defined"
-    ],
-    "correctIndex": 3
-    },
-    {
-    "id": 23,
-    "question": "What is the output of this code: let x = 0.1 + 0.2; console.log(x === 0.3);",
+  {
+  "id": 33,
+    "question": "What is the output of this code: let x = 0.1 + 0.11; console.log(x === 0.21);",
     "answers": [
     "true",
     "false",
-    "0.3",
+    "0.21",
     "undefined"
     ],
     "correctIndex": 1
-    },
+  },
+
+  {
+    "id": 34,
+    "question": "How to declare private properties in JavaScript class?",
+    "answers": [
+    "_property",
+    "private property",
+    "property with #",
+    "property with ~"
+    ],
+    "correctIndex": 2
+  },
+
+  {
+    "id": 35,
+    "question": "What is the output of this code? (() => { let x = 5; return (() => x)(); })();",
+    "answers": [
+    "5",
+    "undefined",
+    "error",
+    "null"
+    ],
+    "correctIndex": 0
+  },
+  
+  {
+    "id": 36,
+    "question": "Which of the following is not a primitive data type in JavaScript?",
+    "answers": [
+    "Number",
+    "String",
+    "Boolean",
+    "Object"
+    ],
+    "correctIndex": 3
+  },
+
+  {
+    "id": 38,
+    "question": "What is the difference between == and === in JavaScript?",
+    "answers": [
+    "=== performs type coercion while == does not",
+    "== performs type coercion while === does not",
+    "Both == and === perform type coercion",
+    "Neither == nor === perform type coercion"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    "id": 39,
+    "question": "What is the difference between == and === in JavaScript?",
+    "answers": [
+    "== compares values and type coercion, === compares values without type coercion",
+    "== compares values without type coercion, === compares values and type coercion",
+    "Both == and === perform type coercion",
+    "Both == and === do not perform type coercion"
+    ],
+    "correctIndex": 0
+  },
+  
+  {
+    "id": 40,
+    "question": "What is the output of the following code: console.log(typeof undefined == typeof null)",
+    "answers": [
+    "true",
+    "false",
+    "undefined",
+    "null"
+    ],
+    "correctIndex": 0
+  },
+  
+  {
+    "id": 41,
+    "question": "What is the difference between null and undefined in JavaScript?",
+    "answers": [
+    "They are the same, both represent non-values",
+    "undefined is explicitly set to a non-value, null means a value has not been assigned",
+    "null is explicitly set to a non-value, undefined means a value has not been assigned",
+    "They are different, one represents an error and one represents a non-value"
+    ],
+    "correctIndex": 2
+  },
+  
+  {
+    "id": 42,
+    "question": "What is the purpose of the 'new' operator in JavaScript?",
+    "answers": [
+    "The 'new' operator creates a new array",
+    "The 'new' operator creates a new instance of a primitive type",
+    "The 'new' operator creates a new instance of an object, using a constructor function",
+    "The 'new' operator creates a new function",
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 43,
+    "question": "What is the difference between the let and const keywords in JavaScript?",
+    "answers": [
+    "Let is block-scoped and const is function-scoped",
+    "Const is block-scoped and let is function-scoped",
+    "Both let and const are block-scoped",
+    "Variables declared with const have to be initialized when declared and can't be reassigned"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": 44,
+    "question": "What would be the final value of arr? const arr = [0, 1, 2]; arr[3] = 3",
+    "answers": [
+    "[0, 1, 2]",
+    "[0, 1, 2, 3]",
+    "An error will be thrown",
+    "undefined"
+    ],
+    "correctIndex": 1
+  },
     
-      {
-      "id": 25,
-      "question": "How to declare private properties in JavaScript class?",
-      "answers": [
-      "_property",
-      "private property",
-      "property with Symbol",
-      "property with WeakMap"
-      ],
-      "correctIndex": 2
-      },
-      
-
-
-
-      {
-      "id": 27,
-      "question": "What is the output of this code? (() => { let x = 5; return (() => x)(); })();",
-      "answers": [
-      "5",
-      "undefined",
-      "error",
-      "null"
-      ],
-      "correctIndex": 0
-      },
-     
-        {
-        "id": 6,
-        "question": "Which of the following is not a primitive data type in JavaScript?",
-        "answers": [
-        "Number",
-        "String",
-        "Boolean",
-        "Object"
-        ],
-        "correctIndex": 3
-        },
-        {
-        "id": 7,
-        "question": "What is the output of the following code? console.log(0.1 + 0.2 === 0.3)",
-        "answers": [
-        "true",
-        "false"
-        ],
-        "correctIndex": 1
-        },
-        {
-        "id": 8,
-        "question": "What is closure in JavaScript?",
-        "answers": [
-        "A closure is a function that has access to variables in its outer scope, even after the outer function has returned",
-        "A closure is an inner function that has access to the outer function's variables",
-        "A closure is a function that returns another function",
-        "A closure is an object that combines a function and
-
-        {
-          "id": 67,
-          "question": "What is the difference between == and === in JavaScript?",
-          "answers": [
-          "== compares values and type coercion, === compares values without type coercion",
-          "== compares values without type coercion, === compares values and type coercion",
-          "Both == and === perform type coercion",
-          "Both == and === do not perform type coercion"
-          ],
-          "correctIndex": 0
-          },
-          
-          {
-          "id": 68,
-          "question": "What is the output of the following code: console.log(typeof undefined == typeof null)",
-          "answers": [
-          "true",
-          "false",
-          "undefined",
-          "null"
-          ],
-          "correctIndex": 0
-          },
-          
-          {
-          "id": 69,
-          "question": "What is the difference between null and undefined in JavaScript?",
-          "answers": [
-          "null is explicitly set to a non-value, undefined means a value has not been assigned",
-          "undefined is explicitly set to a non-value, null means a value has not been assigned",
-          "They are the same, both represent non-values",
-          "They are different, one represents an error and one represents a non-value"
-          ],
-          "correctIndex": 0
-          },
-          
-          {
-          "id": 70,
-          "question": "What is closure in JavaScript?",
-          "answers": [
-          "A closure is a function that has access to variables in its outer scope, even after the outer function has returned",
-          "A closure is a function that has access to global variables, even after the outer function has returned",
-          "A closure is an object that holds a reference to a function and its associated variables",
-          "A closure is a function that can only be called once"
-          ],
-          "correctIndex": 0
-          },
-          
-          {
-          "id": 71,
-          "question": "What is the purpose of the 'new' operator in JavaScript?",
-          "answers": [
-          "The 'new' operator creates a new instance of an object, using a constructor function",
-          "The 'new' operator creates a new instance of a primitive type",
-          "The 'new' operator creates a new function",
-          "The 'new' operator creates a new array"
-          ],
-          "correctIndex": 0
-          },
-          {
-            "id": 119,
-            "question": "What is the difference between the let and const keywords in JavaScript?",
-            "answers": [
-            "let is block-scoped and const is function-scoped",
-            "const is block-scoped and let is function-scoped",
-            "Both let and const are block-scoped",
-            "Both let and const are function-scoped"
-            ],
-            "correctIndex": 2
-            },
-            
-            {
-            "id": 120,
-            "question": "Which of the following is not a feature of ECMAScript 6 (ES6)?",
-            "answers": [
-            "Destructuring assignment",
-            "Map and Set data structures",
-            "Block-scoped variables with let and const",
-            "Private properties in classes"
-            ],
-            "correctIndex": 3
-            },
-            
-            {
-            "id": 121,
-            "question": "What is the purpose of the for...of loop in JavaScript?",
-            "answers": [
-            "To iterate over the values in an array",
-            "To iterate over the properties in an object",
-            "To execute a block of code for a specific number of times",
-            "To execute a block of code until a specified condition is met"
-            ],
-            "correctIndex": 0
-            },
-            
-            {
-            "id": 122,
-            "question": "What is the difference between the spread operator (...) and the rest operator (...) in JavaScript?",
-            "answers": [
-            "The spread operator expands an array, while the rest operator collects multiple values into an array",
-            "The rest operator expands an array, while the spread operator collects multiple values into an array",
-            "Both operators do the same thing",
-            "They are completely different and have no relationship"
-            ],
-            "correctIndex": 0
-            },
-            
-            {
-            "id": 123,
-            "question": "Which of the following is not a way to create a new object in JavaScript?",
-            "answers": [
-            "Object literal",
-            "Object constructor",
-            "Class constructor",
-            "Object.create() method"
-            ],
-            "correctIndex": 2
-          },
-
-          {
-            "id": 79,
-            "question": "What is the result of executing this code? console.log(typeof typeof 1);",
-            "answers": [
-            "number",
-            "string",
-            "undefined",
-            "null"
-            ],
-            "correctIndex": 1
-            },
-            {
-            "id": 80,
-            "question": "Which of the following is not a valid way to declare a variable in JavaScript?",
-            "answers": [
-            "var",
-            "let",
-            "const",
-            "define"
-            ],
-            "correctIndex": 3
-            },
-            {
-            "id": 81,
-            "question": "What is the output of this code? console.log(0.1 + 0.2 == 0.3);",
-            "answers": [
-            "true",
-            "false",
-            "undefined",
-            "null"
-            ],
-            "correctIndex": 1
-            },
-            {
-            "id": 82,
-            "question": "What is the difference between == and === in JavaScript?",
-            "answers": [
-            "== performs type coercion while === does not",
-            "=== performs type coercion while == does not",
-            "Both == and === perform type coercion",
-            "Neither == nor === perform type coercion"
-            ],
-            "correctIndex": 0
-            }
-
-            {
-              "id": 181,
-              "question": "What is the purpose of the Array.prototype.reduce() method in JavaScript?",
-              "answers": [
-              "To remove elements from an array",
-              "To iterate over an array and produce a single value as output",
-              "To sort an array in ascending or descending order",
-              "To insert elements into an array"
-              ],
-              "correctIndex": 1
-              },
-              {
-              "id": 182,
-              "question": "What is the difference between null and undefined in JavaScript?",
-              "answers": [
-              "null is explicitly set by a programmer, undefined means a variable has been declared but has not yet been assigned a value",
-              "null and undefined are the same value",
-              "null is an object, undefined is a primitive value",
-              "undefined is explicitly set by a programmer, null means a variable has been declared but has not yet been assigned a value"
-              ],
-              "correctIndex": 0
-              },
-              {
-              "id": 183,
-              "question": "How do you declare a constant in JavaScript?",
-              "answers": [
-              "var constant = value",
-              "let constant = value",
-              "const constant = value",
-              "final constant = value"
-              ],
-              "correctIndex": 2
-              },
-              {
-              "id": 184,
-              "question": "What is the difference between let and var in JavaScript?",
-              "answers": [
-              "let is block-scoped, var is function-scoped",
-              "var is block-scoped, let is function-scoped",
-              "let and var are both function-scoped",
-              "let and var are both block-scoped"
-              ],
-              "correctIndex": 0
-              },
-              {
-              "id": 185,
-              "question": "How do you declare a JavaScript arrow function?",
-              "answers": [
-              "function (params) => { code }",
-              "function params => { code }",
-              "(params) => { code }",
-              "(params) { code }"
-              ],
-              "correctIndex": 2
-              },
-
-              {
-                "id": 84,
-                "question": "What is the result of the following expression: Boolean(NaN)?",
-                "answers": [
-                "true",
-                "false",
-                "NaN",
-                "undefined"
-                ],
-                "correctIndex": 1
-                },
-                {
-                "id": 85,
-                "question": "What will be the output of the following code?\n\n\nlet num = 0.1 + 0.2;\nconsole.log(num);\n",
-                "answers": [
-                "0.3",
-                "0.30000000000000004",
-                "0.5",
-                "1"
-                ],
-                "correctIndex": 1
-                },
-                {
-                "id": 86,
-                "question": "What will be the output of the following code?\n\n\nconsole.log(0.1 + 0.2 === 0.3);\n",
-                "answers": [
-                "true",
-                "false",
-                "0.3",
-                "undefined"
-                ],
-                "correctIndex": 1
-                },
-                {
-                "id": 87,
-                "question": "What is the correct way to check if a variable x is an array in JavaScript?",
-                "answers": [
-                "Array.isArray(x)",
-                "x instanceof Array",
-                "typeof x === 'array'",
-                "x.constructor === Array"
-                ],
-                "correctIndex": 0
-                },
-                {
-                "id": 88,
-                "question": "What is the output of the following code?\n\n\nconsole.log(typeof typeof 1);\n",
-                "answers": [
-                "number",
-                "string",
-                "undefined",
-                "object"
-                ],
-                "correctIndex": 1
-                },
-                {
-                "id": 89,
-                "question": "What is the value of a after the following code runs?\n\n\nlet a = (1, 2, 3);\n",
-                "answers": [
-                "1",
-                "2",
-                "3",
-                "undefined"
-                ],
-                "correctIndex": 2
-                },
-
-                {
-                  "id": 97,
-                  "question": "What is the use of the 'this' keyword in JavaScript?",
-                  "answers": [
-                  "To refer to a function's arguments object",
-                  "To refer to the object that a function is a property of",
-                  "To refer to the global object",
-                  "To refer to a newly created object"
-                  ],
-                  "correctIndex": 1
-                }
-                  
-                  And another one:
-                  
-                  {
-                  "id": 98,
-                  "question": "What is closure in JavaScript?",
-                  "answers": [
-                  "A way to protect the privacy of an object's properties",
-                  "A function that returns another function",
-                  "An immediately-invoked function expression (IIFE)",
-                  "A special value that can be returned from a function"
-                  ],
-                  "correctIndex": 1
-                  }
-          
-
-
-
-
-{
-id: '1',
-question: 'What is the correct way to convert a string to a number in JavaScript?',
-answers: [
-'Number(string)',
-'string.toNumber()',
-'parseInt(string)',
-'parseFloat(string)'
-],
-correctIndex: 2
-},
-{
-id: '2',
-question: 'What method can you use to add an element to the end of an array in JavaScript?',
-answers: [
-'push()',
-'pop()',
-'unshift()',
-'shift()'
-],
-correctIndex: 0
-},
-{
-id: '3',
-question: 'What is the syntax for a ternary operator in JavaScript?',
-answers: [
-'if (condition) { statement1 } else { statement2 }',
-'condition ? statement1 : statement2',
-'switch (condition) { case statement1 : break; case statement2 : break; }',
-'while (condition) { statement1; statement2; }'
-],
-correctIndex: 1
-},
-{
-id: '4',
-question: 'Which of these is not a falsy value in JavaScript?',
-answers: [
-'undefined',
-'null',
-'NaN',
-'false'
-],
-correctIndex: 3
-},
-{
-id: '5',
-question: 'Which of these is a correct way to declare a variable in JavaScript?',
-answers: [
-'var variableName;',
-'let variableName;',
-'const variableName;',
-'VariableName;'
-],
-correctIndex: 0
-},
-{
-id: '6',
-question: 'What is the correct syntax to use a while loop in JavaScript?',
-answers: [
-'while (condition) { statements; }',
-'do { statements; } while (condition);',
-'for (;;) { statements; }',
-'if (condition) { statements; }'
-],
-correctIndex: 0
-},
-{
-id: '7',
-question: 'How can you check if a variable is an object in JavaScript?',
-answers: [
-'typeof variable === "object"',
-'variable instanceof Object',
-'Array.isArray(variable)',
-'Object.prototype.toString.call(variable) === "[object Object]"'
-],
-correctIndex: 1
-},
-{
-id: '8',
-question: 'What is the correct way to check if an array is empty in JavaScript?',
-answers: [
-'array.length === 0',
-'array === []',
-'array.size === 0',
-'array.empty()'
-],
-correctIndex: 0
-},
-
-
-//TODO:
-{
-id: '9',
-question: 'How can you check if a variable is a string in JavaScript?',
-answers: [
-'typeof variable === "string"',
-'variable instanceof String',
-'Array.isArray(variable)',
-'Object.prototype.to
-
-{
-  id: '9',
-  question: 'What is the difference between let and var in JavaScript?',
-  answers: [
-  'let is block-scoped, var is function-scoped',
-  'var is block-scoped, let is function-scoped',
-  'let is not hoisted, var is hoisted',
-  'var is not hoisted, let is hoisted'
-  ],
-  correctIndex: 0
-  },
-
-
-{
-  id: '10',
-  question: 'In JavaScript, which of the following is a way to convert a string to an integer?',
-  answers: [
-  'parseInt()',
-  'toInt()',
-  'stringToInt()',
-  'Number()'
-  ],
-  correctIndex: 0
-  },
-  
   {
-  id: '11',
-  question: 'Which of the following is a way to declare a variable in JavaScript?',
-  answers: [
-  'var',
-  'let',
-  'const',
-  'define'
-  ],
-  correctIndex: 1
+    "id": 45,
+    "question": "Which of the following is not a feature of ECMAScript 6 (ES6)?",
+    "answers": [
+    "Destructuring assignment",
+    "Map and Set data structures",
+    "Block-scoped variables with let and const",
+    "Private properties in classes"
+    ],
+    "correctIndex": 3
   },
-  
+    
   {
-  id: '12',
-  question: 'How can you check if an object is an Array in JavaScript?',
-  answers: [
-  'You can use the Array.isArray() method',
-  'You can use the instanceof operator',
-  'You can use the typeof operator',
-  'None of the above'
-  ],
-  correctIndex: 0
+    "id": 46,
+    "question": "What is the purpose of the for...of loop in JavaScript?",
+    "answers": [
+    "To iterate over the values in an array",
+    "To iterate over the properties in an object",
+    "To execute a block of code for a specific number of times",
+    "To execute a block of code until a specified condition is met"
+    ],
+    "correctIndex": 0
   },
-  
+    
   {
-  id: '13',
-  question: 'What is the correct way to round a number to two decimal places in JavaScript?',
-  answers: [
-  'round(number, 2)',
-  'number.round(2)',
-  'number.toFixed(2)',
-  'toFixed(number, 2)'
-  ],
-  correctIndex: 2
+    "id": 47,
+    "question": "What is the difference between the spread operator (...) and the rest operator (...) in JavaScript?",
+    "answers": [
+    "The spread operator expands an array, while the rest operator collects multiple values into an array",
+    "The rest operator expands an array, while the spread operator collects multiple values into an array",
+    "Both operators do the same thing",
+    "They are completely different and have no relationship"
+    ],
+    "correctIndex": 0
   },
-  
+    
   {
-  id: '14',
-  question: 'What is the difference between the ' + 'null' + ' and ' + 'undefined' + ' values in JavaScript?',
-  answers: [
-  'null is explicitly set, undefined means a value has not been set',
-  'undefined is explicitly set, null means a value has not been set',
-  'null and undefined are the same',
-  'null is used for objects, undefined is used for variables'
-  ],
-  correctIndex: 0
+    "id": 48,
+    "question": "Which of the following is not a way to create a new object in JavaScript?",
+    "answers": [
+    "Object literal",
+    "Object constructor",
+    "Class constructor",
+    "Object.create() method"
+    ],
+    "correctIndex": 2
   },
+
   {
-    id: '15',
-    question: 'What is closure in JavaScript?',
+    "id": 49,
+    "question": "What is the result of executing this code? console.log(typeof typeof 1);",
+    "answers": [
+    "number",
+    "string",
+    "undefined",
+    "null"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    "id": 50,
+    "question": "Which of the following is not a valid way to declare a variable in JavaScript?",
+    "answers": [
+    "var",
+    "let",
+    "const",
+    "define"
+    ],
+    "correctIndex": 3
+  },
+
+  {
+    "id": 51,
+    "question": "What is the purpose of the Array.prototype.reduce() method in JavaScript?",
+    "answers": [
+    "To remove elements from an array",
+    "To iterate over an array and produce a single value as output",
+    "To sort an array in ascending or descending order",
+    "To reduce an array from the end by a certain number"
+    ],
+    "correctIndex": 1
+  },
+
+  {
+    id: '52',
+    question: 'What is the correct way to convert a string to a number in JavaScript?',
     answers: [
-    'A closure is a function object that has access to variables in its outer scope, even after the outer function has returned',
-    'A closure is an object that provides access to an inner function',
-    'A closure is a combination of a function and the lexical environment within which that function was declared',
-    'A closure is a way to protect the privacy of an object's properties and methods'
+    'Number(string)',
+    'string.toNumber()',
+    'parseInt(string)',
+    'convertToNumber(string)',
     ],
     correctIndex: 2
-    },
-    
-    {
-    id: '16',
-    question: 'Which of the following is not a way to create an object in JavaScript?',
+  },
+
+  {
+    id: '53',
+    question: 'What method can you use to add an element to the end of an array in JavaScript?',
     answers: [
-    'By using object literal notation',
-    'By using the new keyword and an object constructor',
-    'By using the create method',
-    'By using the object.assign() method'
+    'push()',
+    'pop()',
+    'unshift()',
+    'shift()'
+  ],
+  correctIndex: 0
+  },
+
+  {
+    id: '54',
+    question: 'What is the syntax for a ternary operator in JavaScript?',
+    answers: [
+    'if (condition) { statement1 } else { statement2 }',
+    'condition ? statement1 : statement2',
+    'switch (condition) { case statement1 : break; case statement2 : break; }',
+    'while (condition) { statement1; statement2; }'
     ],
-    correctIndex: 2
-    },
-    
-    {
-    id: '17',
-    question: 'Which of the following is a falsy value in JavaScript?',
+    correctIndex: 1
+  },
+
+  {
+    id: '55',
+    question: 'Which of these is not a falsy value in JavaScript?',
     answers: [
+    '"" (empty string)',
     'null',
-    'undefined',
     'NaN',
-    '0'
+    'None of the above'
     ],
     correctIndex: 3
-    },
-    
-    {
-    id: '18',
-    question: 'Which of the following is not a comparison operator in JavaScript?',
+  },
+
+  {
+    id: '56',
+    question: 'What is the correct syntax to use a while loop in JavaScript?',
     answers: [
-    '==',
-    '===',
-    '!=',
-    '!=='
+      'do { statements; } while (condition);',
+      'while (condition) { statements; }',
+      'while (statements) { conditions }',
+      'None are correct',
+    ],
+    correctIndex: 1
+  },
+
+  {
+    id: '57',
+    question: 'How can you know for sure if a variable is an object in JavaScript?',
+    answers: [
+    'typeof variable === "object"',
+    'variable instanceof Object',
+    'Array.isArray(variable)',
+    'Object.prototype.toString.call(variable) === "[object Object]"'
     ],
     correctIndex: 3
-    },
-    
-    {
-    id: '19',
+  },
+
+  {
+    id: '58',
+    question: 'What is the correct way to check if an array is empty in JavaScript?',
+    answers: [
+    'array.length === 0',
+    'array === []',
+    'array.size === 0',
+    'array.empty()'
+    ],
+    correctIndex: 0
+  },
+
+  {
+    id: '59',
+    question: 'What is the correct way to round a number to two decimal places in JavaScript?',
+    answers: [
+    'round(number, 2)',
+    'number.round(2)',
+    'number.toFixed(2)',
+    'toFixed(number, 2)'
+    ],
+    correctIndex: 2
+  },
+  
+  {
+    id: '60',
     question: 'What is the purpose of "use strict" in JavaScript?',
     answers: [
     'To enforce strict typing in JavaScript',
@@ -950,58 +706,13 @@ answers: [
     'To make JavaScript code more compatible with other programming languages'
     ],
     correctIndex: 2
-    },
-    
-    {
-    id: '20',
-    question: 'Which of the following is not a JavaScript data type?',
-    answers: [
-    'Number',
-    'String',
-    'Object',
-    'Boolean'
-    ],
-    correctIndex: 3
-    },
-    [  {    "id": 21,    "question": "What is the result of the following code in JavaScript: var a = 1; (function() { var a = 2; console.log(a); })(); console.log(a);",    "options": [      "2 1",      "1 2",      "2 undefined",      "1 undefined"    ],
-    "correctIndex": 0
   },
+  
+
+  
   {
-    "id": 22,
-    "question": "What would be the value of `num` after the following code in JavaScript is executed? var num = 0; for (var i = 1; i < 5; i++) { num += i; }",
-    "options": [
-      "0",
-      "10",
-      "20",
-      "15"
-    ],
-    "correctIndex": 3
-  },
-  {
-    "id": 23,
-    "question": "What would be the output of the following code in JavaScript? console.log(0.1 + 0.2 === 0.3);",
-    "options": [
-      "true",
-      "false",
-      "undefined",
-      "null"
-    ],
-    "correctIndex": 1
-  },
-  {
-    "id": 24,
-    "question": "What would be the value of `x` after the following code in JavaScript is executed? var x = 0; for (var i = 0; i < 10; i++) { x = x + i; }",
-    "options": [
-      "45",
-      "90",
-      "55",
-      "0"
-    ],
-    "correctIndex": 2
-  },
-  {
-    "id": 25,
-    "question": "What is the value of `x` after the following code in JavaScript is executed? var x = '5'; var y = +x;",
+    "id": '61',
+    "question": "What is the value of `x` after the following code execution? var x = '5'; var y = +x;",
     "options": [
       "5",
       "NaN",
@@ -1011,106 +722,32 @@ answers: [
     "correctIndex": 0
   },
 
-
-
   {
-    "id": 25,
-    "question": "What's the difference between let and var in JavaScript?",
-    "answers": [
-      "let has block scope while var has function scope",
-      "let is hoisted while var is not",
-      "var is implicitly declared while let is not",
-      "let can be updated while var cannot"
-    ],
-    "correctIndex": 2,
-    "briefAnswers": [
-      "let block, var func scope",
-      "let hoisted, var not",
-      "var implicit, let not",
-      "let updatable, var not"
-    ]
-  },
-  {
-    "id": 26,
+    "id": '62',
     "question": "What's the result of (1,5,2) in JavaScript?",
     "answers": [
       "An array",
       "2",
-      "A SyntaxError",
+      "1",
       "undefined"
     ],
-    "correctIndex": 1,
-    "briefAnswers": [
-      "Array",
-      "2",
-      "SyntaxError",
-      "undefined"
-    ]
+    "correctIndex": 1
   },
 
+  {
+    "id": '63',
+    "question": "How can you add an element to the end of an array in JavaScript?",
+    "answers": [
+      "`arr.push(element)`",
+      "`arr[arr.length] = element`",
+      "`arr.append(element)`",
+      "`arr[-1] = element`"
+    ],
+    "correctIndex": 0
+  },
 
   {
-    "questions": [
-      {
-        "id": 25,
-        "question": "In JavaScript, what's the difference between `null` and `undefined`?",
-        "answers": [
-          "`null` is explicitly set, `undefined` means a var is declared but not assigned",
-          "`null` means absence of a value, `undefined` is an undefined value",
-          "`null` is an object, `undefined` is a primitive value",
-          "`null` and `undefined` are completely interchangeable"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 26,
-        "question": "How can you add an element to the end of an array in JavaScript?",
-        "answers": [
-          "`arr.push(element)`",
-          "`arr[arr.length] = element`",
-          "`arr.append(element)`",
-          "`arr[-1] = element`"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 27,
-        "question": "How can you convert a string to an integer in JavaScript?",
-        "answers": [
-          "`parseInt(string)`",
-          "`string.toInt()`",
-          "`Number(string)`",
-          "`int(string)`"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 28,
-        "question": "In JavaScript, what is closure?",
-        "answers": [
-          "A closure is a fn returned inside another fn, retaining access to parent's vars",
-          "A closure is an object that maintains state between function calls",
-          "A closure is a function that executes when its parent function returns",
-          "A closure is a special type of class in JavaScript"
-        ],
-        "correctIndex": 0
-      },
-      {
-        "id": 29,
-        "question": "What is the difference between `var` and `let` in JavaScript?",
-        "answers": [
-          "`var` is function scoped, `let` is block scoped",
-          "`var` is global scoped, `let` is local scoped",
-          "`var` is only for numbers, `let` for strings",
-          "`var` is only for arrays, `let` for objects"
-        ],
-        "correctIndex": 0
-      }
-    ]
-  }
-
-  {
-    "id": 46,
+    "id": '64',
     "question": "What is the difference between call() and apply() methods in JavaScript?",
     "options": [
       "Call and apply are the same thing",
@@ -1120,39 +757,19 @@ answers: [
     ],
     "correctIndex": 1
   },
+
   {
-    "id": 47,
-    "question": "What is Closure in JavaScript?",
-    "options": [
-      "Closures are functions that return other functions",
-      "Closures are private variables within an object",
-      "Closures are variables accessible only inside the object",
-      "Closures are variables accessible only outside the object"
-    ],
-    "correctIndex": 0
-  },
-  {
-    "id": 48,
+    "id": 65,
     "question": "What is the use of bind() method in JavaScript?",
     "options": [
       "Bind is used to link two functions together",
-      "Bind is used to set the value of 'this' permanently",
       "Bind is used to define prototype properties",
-      "Bind is used to assign new values to function arguments"
+      "Bind is used to assign new values to function arguments",
+      "Bind is used to set the value of 'this' permanently"
     ],
-    "correctIndex": 1
+    "correctIndex": 3
   },
-  {
-    "id": 49,
-    "question": "What is hoisting in JavaScript?",
-    "options": [
-      "Hoisting is the process of moving function declarations to the top of the code",
-      "Hoisting is the process of moving variable declarations to the bottom of the code",
-      "Hoisting is the process of moving variable and function declarations to the top of the code",
-      "Hoisting is the process of moving variable and function declarations to the bottom of the code"
-    ],
-    "correctIndex": 2
-  },
+//TODO:
   {
     "id": 50,
     "question": "What is the difference between == and === in JavaScript?",
@@ -1286,29 +903,8 @@ answers: [
   "0"
 ],
 "correctIndex": 0
-}
-{
-"id": 51,
-"question": "What is closure in JavaScript?",
-"answers": [
-  "A function returning a function",
-  "An inner function accessing outer function variables",
-  "An anonymous function",
-  "None of the above"
-],
-"correctIndex": 1
 },
-{
-"id": 52,
-"question": "What is hoisting in JavaScript?",
-"answers": [
-  "Variable and function declarations moved to top",
-  "Variable and function declarations moved to bottom",
-  "Variable declarations moved to top, function declarations remain in place",
-  "None of the above"
-],
-"correctIndex": 0
-}
+
 {
 "id": 53,
 "question": "What is the difference between == and ===?",
@@ -1399,28 +995,8 @@ answers: [
   },
 
 //TODO:
-{
-    id: '2',
-    question: 'What is hoisting?',
-    answers: [
-      'A mechanism in JavaScript where variable and function declarations are moved to the top of their scope',
-      'A way to move elements in the DOM',
-      'A method for handling errors',
-      'None of the above'
-    ],
-    correctIndex: 0
-},
-{
-    id: '3',
-    question: 'What is a closure?',
-    answers: [
-      'A function that has access to variables in its parent scope',
-      'A function that can only be invoked once',
-    'A function that can only be invoked by its parent function',
-    'None of the above'
-    ],
-    correctIndex: 0
-},
+
+
 {
   id: '4',
   question: 'What is the difference between == and === in JavaScript?',
@@ -1556,17 +1132,7 @@ answers: [
             correctIndex: 0
             },
            
-            {
-            id: '13',
-            question: 'What is the difference between let and var in JavaScript?',
-            answers: [
-            'let is block-scoped, var is function-scoped',
-            'let is function-scoped, var is block-scoped',
-            'let and var are the same thing',
-            'None of the above'
-            ],
-            correctIndex: 0
-            },
+           
             {
             id: '14',
             question: 'What is the difference between null and undefined in JavaScript?',
@@ -1600,17 +1166,7 @@ answers: [
             ],
             correctIndex: 0
             },
-    {
-      id: '9',
-      question: 'What is the difference between let and var?',
-      answers: [
-      'let is block scoped and var is function scoped',
-      'let is hoisted and var is not',
-      'let is immutable and var is mutable',
-      'All of the above'
-      ],
-      correctIndex: 0
-      },
+   
       {
       id: '10',
       question: 'What is the difference between == and === ?',
@@ -1655,28 +1211,10 @@ answers: [
       ],
       correctIndex: 0
       },
-      {
-      id: '14',
-      question: 'What is hoisting?',
-      answers: [
-      'A mechanism in JavaScript where variable and function declarations are moved to the top of their scope',
-      'A way to move elements in the DOM',
-      'A method for handling errors',
-      'None of the above'
-      ],
-      correctIndex: 0
-      },
-      {
-      id: '15',
-      question: 'What is closure?',
-      answers: [
-      'A function that has access to variables in its parent scope',
-      'A way to prevent variables from being modified',
-      'A method for compressing data',
-      'None of the above'
-      ],
-      correctIndex: 0
-      },
+
+    //
+    
+      
    
 
 
@@ -1728,17 +1266,7 @@ answers: [
 
 ///
 
-  {
-    id: '8',
-    question: 'What is closure in JavaScript?',
-    answers: [
-      'A function that returns another function',
-      'A function that has access to variables in the parent scope',
-      'A function that does not have access to variables in the parent scope',
-      'A function that returns the global scope'
-    ],
-    correctIndex: 1
-  },
+
   {
     id: '9',
     question: 'What is an anonymous function?',
@@ -1796,7 +1324,7 @@ answers: [
   },
 
 
-
+//seems wrong further for some time
 {
 id: '9',
 question: 'What is an event loop?',
@@ -1810,7 +1338,7 @@ correctIndex: 0
 },
 {
 id: '10',
-question: 'What is closure?',
+question: 'What is closure?', //wrong
 answers: [
 'A function that returns another function',
 'A way to create private variables',
@@ -1886,14 +1414,7 @@ correctIndex: 1
   ],
   correctIndex: 0
   },
-  {
-  id: '15',
-  question: 'What is a callback function in JavaScript?',
-  answers: [
-  'A callback function is a function passed as an argument to another function, to be executed at a later time',
-  'A callback function is a function that is returned from another function',
-  'A callback function
-
+  //perhaps multiple correct answers
 
   {
     id: 8,
@@ -1906,17 +1427,7 @@ correctIndex: 1
     ],
     correctIndex: 0
   },
-  {
-    id: 9,
-    question: 'What is closure in JavaScript?',
-    answers: [
-      'A closure is a function that has access to variables in its parent scope, even after the parent function has returned',
-      'A closure is a function that has access to variables in its child scope, even after the child function has returned',
-      'A closure is a function that has access to variables in its global scope, even after the function has returned',
-      'A closure is a function that has access to variables in its local scope, even after the function has returned'
-    ],
-    correctIndex: 0
-  },
+
   {
     id: 10,
     question: 'What is an IIFE in JavaScript?',
@@ -1962,17 +1473,7 @@ correctIndex: 1
     ],
     correctIndex: 0
     },
-    {
-    id: '11',
-    question: 'What is closure in JavaScript?',
-    answers: [
-    'A closure is a function object that has access to variables in its lexical scope, even when the function is invoked outside that scope.',
-    'A closure is a block of code that can be executed at a later time',
-    'A closure is a way to create private variables in JavaScript',
-    'A closure is a way to make a function always return the same output'
-    ],
-    correctIndex: 0
-    },
+ 
     {
     id: '12',
     question: 'What is the difference between let and var in JavaScript?',
@@ -2018,17 +1519,7 @@ correctIndex: 1
       ],
       correctIndex: 0
     },
-    {
-      id: '16',
-      question: 'What is closure in JavaScript?',
-      answers: [
-        'A function that returns another function',
-        'A function that has access to variables in its parent scope',
-        'A function that has access to the global scope',
-        'A function that can be invoked multiple times'
-      ],
-      correctIndex: 1
-    },
+ 
     {
       id: '17',
       question: 'What is event bubbling in JavaScript?',
@@ -2068,17 +1559,7 @@ correctIndex: 1
       ],
       correctIndex: 1
     },
-    {
-      id: '16',
-      question: 'What is closure in JavaScript?',
-      answers: [
-        'A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain',
-        'A closure is an anonymous function that can be passed around as an argument',
-        'A closure is an object that retains the state of a function',
-        'A closure is a way to make a variable private'
-      ],
-      correctIndex: 0
-    },
+
     {
       id: '17',
       question: 'What is the difference between == and === in JavaScript?',
@@ -2124,42 +1605,12 @@ correctIndex: 1
       ],
       correctIndex: 0
       },
-      {
-      id: '20',
-      question: 'What is closure in JavaScript?',
-      answers: [
-      'A function that has access to variables in its parent scope',
-      'A function that has access to variables in its global scope',
-      'A function that does not have access to any variables',
-      'A function that only has access to its own variables'
-      ],
-      correctIndex: 0
-      }
+ 
 
 
 
-      {
-        id: '16',
-        question: 'What is closure in JavaScript?',
-        answers: [
-          'A function that returns another function',
-          'A function that keeps access to variables in its parent scope',
-          'A function that is defined inside another function',
-          'A function that cannot access variables in its parent scope'
-        ],
-        correctIndex: 1
-      },
-      {
-        id: '17',
-        question: 'What is the difference between let and var in JavaScript?',
-        answers: [
-          'let is block scoped, var is function scoped',
-          'let is function scoped, var is block scoped',
-          'let is hoisted, var is not',
-          'let is not hoisted, var is'
-        ],
-        correctIndex: 0
-      },
+//multiple correct ans
+  
       {
         id: '18',
         question: 'What is the difference between == and === in JavaScript?',
